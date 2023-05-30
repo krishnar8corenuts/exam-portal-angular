@@ -15,6 +15,6 @@ WORKDIR /usr/share/nginx/html
 
 RUN rm -rf ./*
 
-COPY --from=builder /ang23/dist/exam-portal-angular .
+COPY --from=builder /ang23/dist/examportalangular .
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
